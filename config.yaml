@@ -1,0 +1,100 @@
+Deadlines_day: 2024/6/21
+Deadlines_title: 2024年中考
+after_class_time:
+- 09:40
+- '10:30'
+- '11:40'
+- '12:30'
+- '14:40'
+- '15:30'
+- '16:40'
+- '17:30'
+- '18:20'
+class_time:
+- 09:00
+- 09:50
+- '11:00'
+- '11:50'
+- '14:00'
+- '14:50'
+- '16:00'
+- '16:50'
+- '17:40'
+classes: XX22班
+color_settings:
+- - DarkGreen
+  - LightPink
+  - yellow
+  - white
+- - '#6D4E56'
+  - LightPink
+  - '#E8D7DE'
+  - white
+- - '#263A53'
+  - '#C95036'
+  - '#DC685B'
+  - '#D27773'
+down_play_duration: 538
+music_folder: /music
+str_motto:
+- - 业精于勤，荒于嬉；行成于思，毁于随。
+  - Genius is nothing but hard work and diligence.
+- - 岁月不待人
+  - Time and tied wait for no man.
+- - 光阴一去不复返
+  - All time is no time when it is past.
+- - 岁去弦吐箭
+  - Time is a bird for ever on the wing.
+- - 花有重开日，人无再少年。
+  - Time past cannot be called back again.
+- - 一日之计在于晨
+  - An hour in the morning is worth two in the evening.
+- - 少壮不努力，老大徒伤悲。
+  - A young idler, an old beggar.
+- - 学习的敌人是自己的满足
+  - Complacency is the enemy of study.
+- - 水滴石穿，绳锯木断。
+  - Constant dripping wears away a stone.
+- - 时钟不能倒转
+  - One cannot put back the clock.
+- - 永不言败
+  - Never say die.
+- - 没有付出就没有收获
+  - No pains, no gains.
+- - 活到老，学到老。
+  - It is never too old to learn.
+- - 坚持下去，胜利就在眼前。
+  - Keep going, and victory is within sight.
+- - 目标明确，步伐坚定。
+  - Clear goals, steady steps.
+- - 拥有梦想是一种幸福，追逐梦想是一种快乐。
+  - Having a dream is a happiness; chasing a dream is a joy.
+- - 不要害怕失败，害怕的应该是不敢尝试。
+  - Don't fear failure; fear not trying.
+- - 一寸光阴一寸金，寸金难买寸光阴。
+  - Time is money, and money cannot buy time.
+- - 劝君莫惜金缕衣，劝君惜取少年时。
+  - not to cherish your fine clothes, but to cherish your youth.
+- - 黑发不知勤学早，白首方悔读书迟。
+  - It is too late to regret that you did not study hard.
+- - 光阴似箭，日月如梭。
+  - Time flies like an arrow, the moon pass by like a shuttle.
+- - 逝者如斯夫，不舍昼夜。
+  - Time passes like water, day and night without ceasing.
+str_rules:
+- 第一节自习：|09:00-09:40|晨读语、英
+- 第二节自习：|09:50-10:30|数学
+- 第三节自习：|11:00-11:40|语文
+- 第四节自习：|11:50-12:30|英语
+- 第五节自习：|14:00-14:40|物理
+- 第六节自习：|14:50-15:30|化学
+- 第七节自习：|16:00-16:40|地理
+- 第八节自习：|16:50-17:30|历史
+- 第九节自习：|17:40-18:20|政治
+- test:|15:40-15:43|test
+- test:|16:54-16:57|test
+student_parent: XXX家长
+study_group: 居家学习
+time_style: '%Y年%m月%d日 %H:%M:%S'
+title_name: 网络云自习
+up_play_duration: 54
