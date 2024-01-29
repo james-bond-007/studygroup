@@ -30,16 +30,16 @@ jobs:
       shell: bash
       run: |
         python -m pip install --upgrade pip 
-        pip install -r requirements.txt
+        pip install pygame pyYAML
         pip install pyinstaller
-        pyinstaller -w -p pyside6 -p ./src --add-data ./src/*:./src --icon ./src/main.icns --onefile main.py -n 'Math Quiz'
+        pyinstaller -w -p ./src --add-data ./src/*:./src --icon ./src/main.icns --onefile main.py -n CountDown
         # chmod -R 0755 ./dist
         chown -R $(whoami) ./dist
-        # rm -f ./dist/'Math Quiz'
+        # rm -f ./dist/CountDown
     - name: Upload Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: Math_Quiz_linux
+        name: Count_Down_linux
         path: dist
   build_windows:
     runs-on: windows-latest
@@ -53,15 +53,15 @@ jobs:
         shell: bash
         run: |
           python -m pip install --upgrade pip 
-          pip install -r requirements.txt
+          pip install pygame pyYAML
           pip install pyinstaller
-          pyinstaller -w -p pyside6 -p ./src/ --add-data './src/*;./src' --icon ./src/main.ico --onefile ./main.py -n 'Math Quiz'
+          pyinstaller -w -p ./src/ --add-data './src/*;./src' --icon ./src/main.ico --onefile ./main.py -n CountDown
           # chown -R $(stat -c '%u:%g' .) .\dist\
-          # del ./dist/'Math Quiz'
+          # del ./dist/CountDown
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: Math_Quiz_exe
+          name: Count_Down_exe
           path: dist
   build_macOS:
     runs-on: macos-latest
@@ -75,20 +75,20 @@ jobs:
         shell: bash
         run: |
           python -m pip install --upgrade pip 
-          pip install -r requirements.txt
+          pip install pygame pyYAML
           pip install pyinstaller
-          pyinstaller -w -p pyside6 -p ./src --add-data './src/*':./src --icon ./src/main.icns --onefile main.py -n 'Math Quiz'
+          pyinstaller -w -p ./src --add-data './src/*':./src --icon ./src/main.icns --onefile main.py -n CountDown
           # chmod -R 0755 ./dist
           chown -R $(whoami) ./dist
-          rm -f ./dist/'Math Quiz'
-          chmod 0777 ./dist/'Math Quiz'.app/Contents/MacOS/'Math Quiz'
+          rm -f ./dist/CountDown
+          chmod 0777 ./dist/CountDown.app/Contents/MacOS/CountDown
           pip install dmgbuild
-          dmgbuild -s ./mycal.dmg.json "Math Quiz" ./dist/Math\ Quiz.dmg
+          dmgbuild -s ./mycal.dmg.json CountDown ./dist/Math\ Quiz.dmg
           rm -r ./dist/Math\ Quiz.app
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
-          name: Math_Quiz_mac
+          name: Count_Down_mac
           path: dist
   # release:
       # runs-on: ubuntu-latest
