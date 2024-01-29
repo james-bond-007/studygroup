@@ -83,8 +83,8 @@ jobs:
           rm -f ./dist/CountDown
           chmod 0777 ./dist/CountDown.app/Contents/MacOS/CountDown
           pip install dmgbuild
-          dmgbuild -s ./mycal.dmg.json CountDown ./dist/Math\ Quiz.dmg
-          rm -r ./dist/Math\ Quiz.app
+          dmgbuild -s ./mycal.dmg.json CountDown ./dist/CountDown.dmg
+          rm -r ./dist/CountDown.app
       - name: Upload Artifact
         uses: actions/upload-artifact@v3
         with:
